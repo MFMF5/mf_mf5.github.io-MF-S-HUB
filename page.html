@@ -18,8 +18,10 @@
             background-color: #fff; /* Beyaz üst çubuk */
             display: flex;
             align-items: center;
+            justify-content: space-between; /* Sol ve sağ uçlar için */
             padding: 0 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Hafif gölge */
+            position: relative; /* Ortadaki yazıyı ortalamak için */
         }
 
         /* Logo ve MF yazısı */
@@ -56,6 +58,22 @@
             transform: rotate(90deg);
         }
 
+        /* Ortadaki tıklanabilir yazı */
+        .center-link {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .center-link:hover {
+            text-decoration: underline;
+        }
+
         /* Ortadaki kutu */
         .center-box {
             background-color: #fff; /* Beyaz kutu */
@@ -79,6 +97,9 @@
             <div class="virus-icon"></div>
             MF
         </div>
+
+        <!-- Ortadaki tıklanabilir yazı -->
+        <a href="page2.html" class="center-link">Who am i?</a>
     </div>
 
     <div class="center-box">
@@ -87,3 +108,4 @@
 
 </body>
 </html>
+
