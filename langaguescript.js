@@ -17,3 +17,8 @@ function setLang(lang) {
 // Butonlara tıklama olaylarını bağla
 document.getElementById("btn-en").addEventListener("click", () => setLang("en"));
 document.getElementById("btn-tr").addEventListener("click", () => setLang("tr"));
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btn-en").addEventListener("click", () => setLang("en"));
+  document.getElementById("btn-tr").addEventListener("click", () => setLang("tr"));
+});
+
