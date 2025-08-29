@@ -66,3 +66,41 @@
 </body>
 </html>
 <script src="langaguescript.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MF Page</title>
+  <style>
+    body { background:black; color:white; text-align:center; font-family:Arial }
+    .logo { position:absolute; top:10px; left:10px; display:flex; align-items:center; gap:8px; font-weight:bold }
+    .circle { width:25px; height:25px; background:red; border-radius:50% }
+    .content { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) }
+    .lang-buttons { position:absolute; top:10px; right:10px; }
+    button { margin: 0 5px; padding:5px 10px; border:none; border-radius:8px; cursor:pointer }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <div class="logo">
+    <div class="circle"></div>
+    <span>MF</span>
+  </div>
+
+  <!-- Dil butonları -->
+  <div class="lang-buttons">
+    <button id="btn-en">EN</button>
+    <button id="btn-tr">TR</button>
+  </div>
+
+  <!-- İçerik -->
+  <div class="content">
+    <h1 id="title">HI, I AM MF_MF5.</h1>
+    <p id="desc">I am a minecraft player. I love codes, mechanic and also minecraft... Just that lol.</p>
+  </div>
+
+  <!-- Dış JS dosyası -->
+  <script src="langaguescript.js"></script>
+</body>
+</html>
+
