@@ -13,3 +13,7 @@ function setLang(lang) {
   document.getElementById("title").innerText = texts[lang].title;
   document.getElementById("desc").innerText = texts[lang].desc;
 }
+
+// Butonlara tıklama olaylarını bağla
+document.getElementById("btn-en").addEventListener("click", () => setLang("en"));
+document.getElementById("btn-tr").addEventListener("click", () => setLang("tr"));
